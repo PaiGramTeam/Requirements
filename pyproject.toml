@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "PaiGram"
+version = "0.4.0"
+description = "Telegarm robot, query the official genshin information."
+authors = ["洛水居室", "zhxy-CN", "Chuangbo Li", "kotoriのねこ", "omg-xtao", "艾迪", "Karako", "SiHuaN"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.25.0"
+ujson = "^5.9.0"
+Jinja2 = "^3.1.2"
+python-telegram-bot = { version = "^21.3", extras = ["ext", "rate-limiter"] }
+sqlmodel = "^0.0.19"
+colorlog = "^6.8.0"
+fakeredis = "^2.19.0"
+redis = "^5.0.1"
+beautifulsoup4 = "^4.12.1"
+asyncmy = "^0.2.9"
+aiofiles = "^23.2.1"
+python-dotenv = "^1.0.0"
+alembic = "^1.13.0"
+black = "^24.1.1"
+rich = "^13.6.0"
+enkanetwork-py = { git = "https://github.com/mrwan200/EnkaNetwork.py" }
+TgCrypto = { version = "^1.2.5", optional = true }
+Pyrogram = { version = "^2.0.102", optional = true }
+pytest = { version = "^7.3.0", optional = true }
+pytest-asyncio = { version = "^0.23.2", optional = true }
+flaky = { version = "^3.7.0", optional = true }
+lxml = "^5.0.0"
+arko-wrapper = "^0.2.8"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.28.0" }
+sentry-sdk = "^1.31.0"
+GitPython = "^3.1.30"
+openpyxl = "^3.1.1"
+async-lru = "^2.0.4"
+thefuzz = "^0.22.1"
+cryptography = "^42.0.2"
+pillow = "^10.0.1"
+playwright = "1.39.0"
+aiosqlite = { extras = ["sqlite"], version = "^0.20.0" }
+simnet = { git = "https://github.com/PaiGramTeam/SIMNet" }
+gcsim-pypi = "^2.8.2.10"
+python-genshin-artifact = { version = "^1.0.4", optional = true }
+psutil = "^5.9.6"
+starrail-damage-cal = "^1.4.2"
+starrailrelicscore = {git = "https://github.com/PaiGramTeam/StarRailRelicScore"}
+kuronet = {git = "https://github.com/PaiGramTeam/KuroNet"}
+
+[tool.poetry.extras]
+genshin-artifact = ["python-genshin-artifact"]
+pyro = ["Pyrogram", "TgCrypto"]
+test = ["pytest", "pytest-asyncio", "flaky"]
+sqlite = ["aiosqlite"]
+all = ["pytest", "pytest-asyncio", "flaky", "Pyrogram", "TgCrypto", "aiosqlite", "python-genshin-artifact"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# pytest配置
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+# 格式配置
+[tool.black]
+include = '\.pyi?$'
+line-length = 120
+target-version = ['py311']
