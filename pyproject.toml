@@ -37,7 +37,7 @@ GitPython = "^3.1.30"
 openpyxl = "^3.1.1"
 async-lru = "^2.0.4"
 thefuzz = "^0.22.1"
-cryptography = "^42.0.2"
+cryptography = "^43.0.0"
 pillow = "^10.0.1"
 playwright = "1.45.1"
 aiosqlite = { extras = ["sqlite"], version = "^0.20.0" }
