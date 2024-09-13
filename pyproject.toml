@@ -39,7 +39,7 @@ async-lru = "^2.0.4"
 thefuzz = "^0.22.1"
 cryptography = "^43.0.0"
 pillow = "^10.0.1"
-playwright = "1.46.0"
+playwright = "1.47.0"
 aiosqlite = { extras = ["sqlite"], version = "^0.20.0" }
 gcsim-pypi = "^2.8.2.10"
 python-genshin-artifact = { version = "^1.0.4", optional = true }
