@@ -43,7 +43,7 @@ playwright = "1.48.0"
 aiosqlite = { extras = ["sqlite"], version = "^0.20.0" }
 gcsim-pypi = "^2.8.2.10"
 python-genshin-artifact = { version = "^1.0.4", optional = true }
-psutil = "^6.0.0"
+psutil = "^7.0.0"
 starrail-damage-cal = "^3.0.4"
 influxdb-client = { version = "^1.43.0", extras = ["async", "ciso"] }
 
