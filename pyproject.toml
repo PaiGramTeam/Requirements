@@ -22,7 +22,7 @@ aiofiles = "^24.1.0"
 python-dotenv = "^1.0.0"
 alembic = "^1.13.0"
 black = "^24.1.1"
-rich = "^13.6.0"
+rich = "^14.0.0"
 TgCrypto = { version = "^1.2.5", optional = true }
 Pyrogram = { version = "^2.0.102", optional = true }
 pytest = { version = "^8.2.2", optional = true }
