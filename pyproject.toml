@@ -7,7 +7,7 @@ license = "AGPL-3.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 httpx = "^0.28.0"
 ujson = "^5.9.0"
 Jinja2 = "^3.1.2"
